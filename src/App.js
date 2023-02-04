@@ -45,7 +45,7 @@ export default function App() {
   const getBooking = async () => {
     let result = await fetch("http://localhost:4000/bookings");
     let data = await result.json();
-    console.log("Product List -", data);
+    console.log("User List -", data);
     setBooking(data);
   };
 
